@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         else {
 
             locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
-            Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+            location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
             if (location!=null) {
                 // we will add code to update location info here
                 updateLocationInfo(location);
